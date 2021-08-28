@@ -1,10 +1,10 @@
 import './app.css';
 import React, { useEffect, useState } from 'react';
 import VideoList from './components/video_list/video_list'
+import SearchBar from './components/search_bar/search_bar'
 
 function App() {
   const [videos, setVideos] = useState([]);
-  const [name, setName] = useState('yeyun');
 
   useEffect(()=>{
     const requestOptions = {
@@ -17,6 +17,11 @@ function App() {
       .then(result => setVideos(result.items))
       .catch(error => console.log('error', error));
   }, []);
-  return <VideoList videos={videos} />;
+  return (
+    <>
+      <SearchBar />
+      <VideoList videos={videos} />
+    </>
+  );
 }
 export default App;
