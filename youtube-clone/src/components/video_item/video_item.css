@@ -1,0 +1,17 @@
+.video-list {
+  display: inline-flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 10px;
+}
+.video-list:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.thumbnail {
+  width: 100%;
+}
+.title {
+  font-size: 20px;
+  color: white;
+}

@@ -1,0 +1,16 @@
+@media screen and (min-width: 1224px) {
+  .videos {
+    padding: 0;
+    overflow-x: scroll;
+    flex: 1;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1224px) {
+  .videos {
+    padding: 0;
+    overflow-x: scroll;
+    text-align: center;
+  }
+}
